@@ -1,0 +1,81 @@
+/* style.css */
+
+/* 1. RESET: Quitamos márgenes por defecto a todo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Esto hace que los bordes no aumenten el tamaño de las cajas */
+}
+
+/* 2. BODY: Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
+    line-height: 1.6;
+    background-color: #f0f2f5; /* Fondo gris suave (tipo Facebook) */
+    color: #333; /* Texto gris oscuro (mejor que negro puro) */
+}
+
+/* 3. CONTENEDOR CENTRAL: Para que parezca una hoja */
+body > header, 
+body > main, 
+body > footer {
+    max-width: 800px; /* Ancho máximo */
+    margin: 0 auto;   /* AUTO a los lados centra el bloque */
+    background-color: white;
+    padding: 20px 40px; /* Espacio interno */
+}
+
+/* 4. SEPARACIONES */
+section, article, form {
+    margin-bottom: 2rem; /* Espacio debajo de cada bloque */
+    border-bottom: 1px solid #eee; /* Una línea sutil divisoria */
+    padding-bottom: 1rem;
+}
+
+/* 5. NAVEGACIÓN (BÁSICA) */
+nav ul {
+    list-style: none; /* Quitamos los puntos de la lista */
+    padding: 10px 0;
+    background-color: #333; /* Barra negra */
+    border-radius: 5px;
+    text-align: center; /* Centramos los enlaces */
+}
+
+nav ul li {
+    display: inline; /* Pone los elementos uno al lado del otro */
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* Quitamos el subrayado azul */
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700; /* Color dorado al pasar el mouse */
+    text-decoration: underline;
+}
+
+/* 6. FORMULARIO BONITO */
+input, textarea {
+    width: 100%; /* Que ocupen todo el ancho */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff; /* Azul botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
